@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+@layer components {
+  .text-gradient-color {
+    @apply bg-gradient-to-b from-[#30599D] to-[#6078EA] inline-block text-transparent bg-clip-text;
+  }
+  .bg-gradient-color {
+    @apply bg-gradient-to-tl from-[#6078EA] to-[#30599D];
+  }
+}
+
+@theme default {
+  --color-primary-color: #ffffff;
+  --color-background-color: #d2d8f6;
+  --color-secondary-color: #6078ea;
+  --color-base-color: #000000;
+  --color-anchor-color: #6078ea;
+  --color-highlight-color: #d2d8f6;
+  --color-lighter-color: #797979;
+  --color-input-color: #ffffff;
+  --color-error-color: #e53935;
+  --color-success-color: #11c186;
+  --color-warning-color: #facc15;
+}
+
+html,
+body {
+  background-color: #ffffff;
+  color: #000000;
+  scroll-behavior: smooth;
+}
+
+th {
+  border-bottom: 1px solid #6078ea !important;
+}
+
+/* .font-special {
+  font-family: var(--font-bagatelleVF);
+} */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #6078ea, #6078ea);
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #d2d8f6;
+}
+
+.swiper-pagination-bullet {
+  width: 15px !important;
+  height: 15px !important;
+  background-color: #6078ea !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.active {
+  color: #ffffff !important;
+}
+
+/** ANTD Theme Change  */
+
+/** SIDEBAR: Only added a border to the left of the menu items and changed the background color of the selected item. */
+/* .ant-menu-item {
+  background-color: transparent !important;
+  border-left: 6px solid #6078EA00 !important;
+  border-radius: 0px !important;
+  margin: 5px !important;
+}
+.ant-menu-item .ant-menu-item-title {
+  background-color: transparent !important;
+  border-left: 6px solid #6078EA00 !important;
+  border-radius: 0px !important;
+  margin: 5px !important;
+}
+.ant-menu-item-selected {
+  background-color: transparent !important;
+  border-left: 6px solid #6078EA !important;
+  border-radius: 0px !important;
+  margin: 5px !important;
+}
+.ant-menu-submenu .ant-menu-submenu-title {
+  background-color: transparent !important;
+  border-left: 6px solid #6078EA00 !important;
+  border-radius: 0px !important;
+  margin: 5px !important;
+}
+
+.ant-menu-submenu-selected .ant-menu-submenu-title {
+  background-color: transparent !important;
+  border-left: 6px solid #6078EA !important;
+  border-radius: 0px !important;
+}
+.ant-menu-submenu-selected .ant-menu-item {
+  border-left: 6px solid #6078EA00 !important;
+  background-color: transparent !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  margin: 5px !important;
+  margin-bottom: 5px !important;
+  border-radius: 0px !important;
+}
+.ant-menu-submenu-selected .ant-menu-item-selected {
+  border-left: 6px solid #6078EA00 !important;
+  background-color: transparent !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  margin: 5px !important;
+  margin-bottom: 5px !important;
+}
+.ant-menu-submenu-selected .ant-menu-item-selected a {
+  color: #6078EA !important;
+}
+.ant-menu-submenu-selected .ant-menu-item-selected .ant-menu-item-icon {
+  color: #6078EA !important;
+} */
+
+/** SIDEBAR:  Selected Backgorund Color Change  */
+
+.ant-menu-submenu-selected .ant-menu-submenu-title {
+  background-color: #6078ea !important;
+}
+.ant-menu-submenu-selected .ant-menu-item-selected {
+  background-color: transparent !important;
+}
+.ant-menu-submenu-selected .ant-menu-item-selected a {
+  color: #6078ea !important;
+}
+.ant-menu-submenu-selected .ant-menu-item-selected .ant-menu-item-icon {
+  color: #6078ea !important;
+}
+
+/** Table:  Sorter Icon Color Change  */
+.ant-table-column-sorters .ant-table-column-sorter-inner {
+  color: #00000099 !important;
+}
+.ant-table-column-sorters .ant-table-column-sorter-inner .active {
+  color: #6078ea !important;
+}
+.ant-table-filter-column .active {
+  color: #6078ea !important;
+}
+.overview .ant-select-selection-item {
+  color: #fff !important;
+}
+.ant-select-selection-item {
+  color: #000000 !important;
+}
+
+.ant-menu-item[data-menu-id="rc-menu-uuid-58545-5-logout"] {
+  background-color: #fff; /* example */
+  color: #6078ea; /* text */ /* text color */
+}
